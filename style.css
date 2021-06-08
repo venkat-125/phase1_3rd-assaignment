@@ -1,0 +1,84 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+ 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+}
+.container .input-form {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.container .input-form input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  font-size: 1.2em;
+}
+.container .input-form:last-child {
+  margin-bottom: 0;
+}
+.container .input-form span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+.container .input-form input:focus ~ span,
+.container .input-form input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.container .input-form [type="button"] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
+}
+.container .input-form:hover [type="button"] {
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 100%;
+    padding: 10px 50px;
+    color: white;
+    background-color: green;
+font-size: 20px;
+}
+.table{
+    padding: 10px 0px;
+}
+.td{
+    padding: 10px 20px;
+    border-bottom: 1px solid green;
+    font-size: 18px;
+}
+.js-btn{
+    padding: 5px 15px;
+    color: white;
+    background-color: green;
+}
